@@ -1,16 +1,13 @@
-# actix-web-and-yew-test
-First start backend with:
+# diesel-test
+To test the functions in this package, do the following:
+```shell
+cd ./backend
+cargo run --bin <bin_file>
 ```
-$ cd backend
-$ cargo run
-```
-Backend will be available at http://localhost:8000
+where `<bin_file>` refers to one of the files in the bin directory.
 
-Then start frontend with:
+For example, to fetch all songs in the database one would run these commands:
+```shell
+cd ./backend
+cargo run --bin get_songs
 ```
-$ cd frontend
-$ trunk serve --proxy-backend=http://localhost:8000/students
-```
-Frontend will be available at http://localhost:8080
-
-Go to http://localhost:8080. The list of displayed students is coming from a dummy database in the backend.
