@@ -1,4 +1,5 @@
 dist/
 .idea/
 tracks.csv
-frontend/Cargo.lock
+Cargo.lock
+backend/target
