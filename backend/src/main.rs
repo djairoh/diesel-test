@@ -1,7 +1,7 @@
-mod models;
+mod db;
 mod actions;
-mod schema;
 
+use crate::db::schema;
 use actix_web::{get, middleware, web::{Data, block, Path}, App, Error, HttpResponse, HttpServer};
 use diesel::{SqliteConnection, r2d2::{self, ConnectionManager}};
 use env_logger;
@@ -77,7 +77,7 @@ async fn main() -> std::io::Result<()> {
     //set up database connection pool
     //let conn_spec = std::env::var("DATABASE_URL").expect("DATABASE_URL");
     //todo: ^ this no work | v this bad
-    let conn_spec = String::from("../tracks.db");
+    let conn_spec = String::from("./tracks.db");
     let manager = ConnectionManager::<SqliteConnection>::new(conn_spec);
     let pool = r2d2::Pool::builder()
         .build(manager)

@@ -1,11 +1,10 @@
 use chrono::NaiveDate;
-use diesel::RunQueryDsl;
-use backend::establish_connection;
 use scanf::scanf;
-use backend::*;
+use crate::db::lib::*;
 
 
 //todo: feex
+/*
 fn main() {
     let mut id: String = String::new();
     let mut name: String = String::new();
@@ -22,3 +21,4 @@ fn main() {
         add_song(&id, &name, &pop, &dur, &art, &id_art, &date);
     }
 }
+*/

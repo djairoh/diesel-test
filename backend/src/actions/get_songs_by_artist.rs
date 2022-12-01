@@ -1,8 +1,6 @@
 use diesel::SqliteConnection;
 use diesel::prelude::*;
-use self::models::*;
-use backend::*;
-use schema::tracks;
+use crate::db::{models::*, schema::tracks};
 use crate::actions::DbError;
 
 
