@@ -8,8 +8,9 @@ cd ./backend
 cargo run
 ```
 
-This will start the web-server on `127.0.0.1:8000`, to test the functionality of the api,
-use a command like `curl` to query the various part of the program.
+This will start the web-server on `127.0.0.1:8000`.
+To test the functionality of the api,
+use a command like `curl` to query the various parts of the program.
 
 ### currently implemented
 At the time of writing, the following api endpoints have been implemented:
