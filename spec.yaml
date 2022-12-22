@@ -54,7 +54,7 @@ components:
 paths:
   /deliveries:
     post:
-      description: Create a new deliery.
+      description: Create a new delivery from request body.
       summary: Create a new delivery.
       requestBody:
         required: true
